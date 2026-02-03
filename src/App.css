@@ -1,38 +1,74 @@
-.App {
+/* Reset default browser spacing */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Arial, sans-serif;
+}
+
+
+/* Page container */
+body{
+  background-color: #f4f6f8;
+}
+
+/* Main app container */
+div{
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Title */
+h1{
   text-align: center;
+  margin-bottom: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Inputs */
+input{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Add button */
+button{
+  width: 100%;
+  padding: 10px;
+  background-color: #4f46e5;
   color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover{
+  background-color: #4338ca;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Student item */
+p{
+  padding: 10px;
+  background-color: #eef2ff;
+  border-radius: 6px;
+  margin-bottom: 5px;
+}
+
+/* Delete button */
+button:last-child{
+  background-color: #ef4444;
+
+}
+
+button:last-child:hover{
+  background-color: #dc2626;
 }
